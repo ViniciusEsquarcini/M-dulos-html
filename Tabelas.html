@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Tabelas HTML</title>
+    <meta charset="utf-8">
+
+<style>
+table, th, td{border: 1px solid #000;}
+th, td {padding: 7px;}
+.nome {background-color: red;}
+.email {background-color: royalblue;}
+.telefone{background-color: salmon;}
+.cargo {background-color: skyblue;}
+</style>
+
+</head>
+
+<body>
+<h1>Tabelas</h1>
+
+<table>
+<caption>Cadastro de Clientes</caption> <!--Legenda-->
+
+<colgroup> <!--Grupo de Colunas para formatalas indivitualmente-->
+<col class="nome">
+<col class="email">
+<col class="telefone">
+<col class="cargo">
+</colgroup>
+
+<thead> <!--Sações Cabeçalho-->
+<tr>
+<th>Nome:</th> <!--titulo-->
+<th>Email:</th>
+<th>Telefone:</th>
+<th>Cargo:</th>    
+</tr>
+</thead>
+
+<tbody> <!--Sação Corpo-->
+<tr>
+<td>Rodrigo</td>  <!--Conteúdo-->  
+<td>rodrigo@gmail.com</td>
+<td>(45)32301203</td>
+<td rowspan="2">Desenvolvedor Web</td> <!--Rowspan = Esta célula tem rowspan="2", por isso tem fundida a célula abaixo. -->
+</tr>
+
+<tr>
+<td>Jeff</td>  <!--Conteúdo-->  
+<td>jeff@gmail.com</td>
+<td>(32)4243</td>
+</tr>
+</tbody>
+
+<tfoot> <!--Sação Rodapé-->
+<tr>
+<td colspan="4">Total: 2</td> <!--Colspan = Fundirá a célula em questão com sua vizinha direita.-->
+</tr>
+
+</tfoot>
+
+</table>
+
+</body>
+
+</html>
